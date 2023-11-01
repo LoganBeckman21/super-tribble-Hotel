@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Logan Beckman Bravo</title>
+  <!-- links CSS styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+
+<button>load my profile</button>
+<!-- creates the bootstrap card -->
+<div class="row">
+  <div class="bg-secondary col-md-6 offset-md-3 card mt-3" >
+
+    <h2 class="card-title">Sign up for Halloween tracker</h2>
+    <h5>Please fill out the form to sign up for the beta of Halloween tracker to see all the best spots for trick or treating!</h5>
+    <form>
+        <!-- Creates email input -->
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <!-- Creates password input -->
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Confirm Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="Confirmpswd">
+      </div>
+
+      <!-- Creates check box if you want to recieve emails -->
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Click to recieve emails
+        </label>
+      </div>
+
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+
+      <!-- ask the user if they what account they want -->
+      <div class="mb-3">
+        <p> Select one from the given options:
+            <select id="select1">
+                <option value="free">Free</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+            </select>
+        </p>
+      </div>
+
+      <!-- Check box for parent or child -->
+      <p>Choose one of the following:</p>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="A">Parent
+        <label class="form-check-label" for="radio1"></label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="B">Child
+        <label class="form-check-label" for="radio2"></label>
+      </div>
+
+      
+
+      <button id="formSubmit" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+</div>
+
+<!-- links JS script file -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script  src="./scripts/script.js"></script>
+
+
+</body>
+</html>
